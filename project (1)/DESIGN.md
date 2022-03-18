@@ -1,3 +1,5 @@
+We utilized Figma for our wireframe designs. 
+
 Overall, we used app.py for our main center for interactivity, created three tables in SQL: "users", "concepts", and "uploads" to store the users, the concepts teachers submitted, and the content students upload to the site. For HTML, we created a "login", "register" and "student" and "teacher" pages. The student and teacher pages were created in order to distinguish their interface. 
 
 In app.py:
