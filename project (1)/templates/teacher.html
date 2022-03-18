@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Teach to Achieve</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/index">Teach to Achieve</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+        aria-controls="navbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/register">Register</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </head>
+  <body class="teacherpage">
+    <!-- Teacher page title -->
+    <h1 class="title">Teach to Achieve</h1>
+    <!-- Teacher page welcome -->
+    <h2 id="welcome">Welcome to your classroom!</h2>
+    <!-- Teacher page classroom code -->
+    <h3 id="classroomcodetext">Classroom Code: 3GR25Y</h3>
+    <!-- Logout button -->
+    <form action="/logout" method="GET">
+      <input type="submit" id="logout-button" value="Logout" />
+    </form>
+    <!-- Teacher instructions -->
+    <p class="bodytext">
+      <i
+        >Begin by creating a concept to which students can add content.
+        <br />Then, through the join code, students can add videos, documents,
+        etc, explaining the chosen concept.
+      </i>
+    </p>
+    <div class="form-group">
+      <small id="body2text" class="form-text text-muted"
+        >Choose a concept or lesson in which students can add content.
+      </small>
+      <!-- Add concept/lesson button -->
+      <form action="/teacher" method="POST">
+        <input
+          type="text"
+          class="form-control"
+          id="concept"
+          name="concept"
+          aria-describedby="body2text"
+          placeholder="Name of Concept"
+        />
+        <input type="submit" id="concept-add" value="Add" />
+      </form>
+    </div>
+    <h3 id="teacher-c">Class Concepts:</h3>
+    <!--Adding concepts from user and uploads from user-->
+    <div id="alluploads">
+      {% for concept in concepts %}
+      <h3 id="uploads-list">{{ concept['concept'] }}</h3>
+      {% endfor %}
+    </div>
+    <h3 id="teacher-c">Uploaded Content:</h3>
+    <div id="alluploads-t">
+      {% for upload in uploads %}
+      <p id="uploads-list"><u>{{ upload['uploads'] }}</u></p>
+      {% endfor %}
+    </div>
+    <div id="hide-concept" style="display:block;">
+      <div id="concept-content"></div>
+    </div>
+    <!--Footer-->
+    <p id="footer">A CS50 Project by Shania Hurtado & Emily Figueiredo</p>
+    <script src="static/js/script.js"></script>
+  </body>
+</html>

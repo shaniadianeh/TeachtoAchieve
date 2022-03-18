@@ -1,0 +1,251 @@
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+/* Homepage */
+.homepage {
+  background: #E8E8E8;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #3895D3;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 100%;
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+
+.slogan {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.description {
+  background-color: #95c2f0;
+  text-align: center;
+  color: black;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-size: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  top: 250px;
+  border: 3px solid black;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#footer {
+  text-align: center;
+  padding-top: 200px;
+  font-family: HK Grotesk;
+  font-style: normal;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* Register page */
+.title-register {
+  text-align: center;
+  color: #599cff;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 90%;
+  margin: 0;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+.dropdown {
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.registerforminput {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.button-register {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#classroomcode {
+  text-align: left;
+  font-size: 15px;
+}
+
+.classroomcodeform {
+  padding-right: 1200px;
+  padding-left: 10px;
+}
+
+/* Login page */
+.title-login {
+  text-align: center;
+  color: #599cff;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 90%;
+  margin: 0;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+#index-image {
+  height: 450px;
+  width: 400px;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-style: solid;
+  border-color: black;
+}
+
+.login-section {
+  padding-bottom: 100px;
+}
+
+.loginforminput {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Student page */
+.studentpage {
+  background: #E8E8E8;
+}
+
+#form-url {
+  position: relative;
+  padding-left: 100px;
+  padding-right: 100px;
+  top: 100px;
+}
+
+#uploads-list {
+  border-style: solid;
+  border-color: black;
+  font-family: HK Grotesk, monospace;
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-transform: capitalize;
+}
+
+#alluploads {
+  padding-top: 100px;
+  font-family: HK Grotesk, monospace;
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 25px;
+  padding-left: 400px;
+  padding-right: 400px;
+  text-transform: capitalize;
+}
+#alluploads-t {
+  padding-top: 0px;
+  font-family: HK Grotesk, monospace;
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 25px;
+  padding-left: 400px;
+  padding-right: 400px;
+  text-transform: capitalize;
+}
+.button-login {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* Teacher page */
+.teacherpage {
+  background: #E8E8E8;
+}
+
+#teacher-c {
+  font-family: HK Grotesk, monospace;
+  font-size: 30px;
+  text-align: center;
+  color: #3895D3;
+  font-weight: bold;
+  padding-top: 0px;
+}
+
+#welcome {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.bodytext {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+#logout-button {
+  position: relative;
+  left: 400px;
+  top: -175px;
+}
+
+#concepts-list {
+  border-style: solid;
+  border-color: black;
+  font-family: HK Grotesk, monospace;
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 80px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-transform: capitalize;
+}
+#concept-teacher {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+#classroomcodetext {
+  text-align: center;
+}
